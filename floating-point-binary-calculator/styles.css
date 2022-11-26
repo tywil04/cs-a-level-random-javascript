@@ -21,7 +21,7 @@
 .inputContainer > label {
     margin-left: 1px;
     font-weight: bold;
-    color: white;
+    color: var(--text-colour);
 }
 
 table {
@@ -34,7 +34,7 @@ table {
 
 tr > th {
     background-color: var(--blue);
-    color: white;
+    color: var(--text-colour);
     font-weight: bold;
     text-align: center;
 }
@@ -50,7 +50,7 @@ tr > th:last-child {
 tr > td {
     text-align: center;
     background-color: var(--secondary-colour);
-    color: white;
+    color: var(--text-colour);
 }
 
 tr > td:nth-child(even) {
@@ -83,7 +83,7 @@ td, th {
     padding: 0 0 0 1px;
     margin-top: 1px;
     margin-bottom: 4px;
-    color: white;
+    color: var(--text-colour);
 }
 
 h1 {
@@ -92,7 +92,7 @@ h1 {
     font-weight: bold;
     font-size: x-large;
     margin-top: 40px;
-    color: white;
+    color: var(--text-colour);
 }
 
 h1:first-child {

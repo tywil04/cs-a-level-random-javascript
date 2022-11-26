@@ -1,5 +1,6 @@
 .disk {
-    background-color: lightblue;
+    background-color: var(--text-colour);
+    color: var(--bg-colour);
     border-radius: 6px;
     padding: 5px 10px;
     width: fit-content;
@@ -27,13 +28,13 @@
 .tower {
     display: flex;
     flex-direction: column-reverse;
-    background: linear-gradient(dodgerblue, dodgerblue) no-repeat center/7px 100%;
-    border-bottom: 7px solid dodgerblue;
+    background: linear-gradient(var(--blue), var(--blue)) no-repeat center/7px 100%;
+    border-bottom: 7px solid var(--blue);
     width: 5%;
 }
 
 .tower.active {
-    background-color: rebeccapurple;
+    background-color: var(--tertiary-colour);
 }
 
 .tower:not(:last-child) {
@@ -65,4 +66,22 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
+}
+
+.vBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.vFit {
+    width: fit-content;
+}
+
+.hFit {
+    height: fit-content;
+}
+
+.mBottom {
+    margin-bottom: 10px;
 }

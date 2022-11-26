@@ -3,6 +3,7 @@
     --secondary-colour: rgb(25, 25, 30);
     --tertiary-colour: rgb(35, 35, 40);
     --blue: dodgerblue;
+    --text-colour: white;
 }
 
 html, body {
@@ -18,7 +19,7 @@ button {
     padding: 4px 8px 4px 8px;
     appearance: none !important;
     border: none !important;
-    color: white;
+    color: var(--text-colour);
     background-color: var(--blue);
     border-radius: 6px;
     transition-duration: 100ms;
@@ -31,6 +32,12 @@ button {
 
 button.subtle {
     background-color: var(--secondary-colour);
+}
+
+button:disabled {
+    opacity: 0.7;
+    cursor: pointer !important;
+    pointer-events: none !important;
 }
 
 button:hover {
@@ -46,7 +53,7 @@ input {
     border-radius: 6px;
     transition-duration: 100ms;
     font-size: medium;
-    color: white;
+    color: var(--text-colour);
 }
 
 input:focus {
@@ -58,4 +65,8 @@ input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
+}
+
+* {
+    color: var(--text-colour)
 }
