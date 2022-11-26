@@ -209,7 +209,7 @@ function gameButtonClicked(event) {
         solveGame.addEventListener("click", () => towerOfHanoi(solveGame, size, ...towerObjects))
         solveGame.disabled = false
 
-        document.querySelector("#minMoves").innerText = `Minimum number of moves: ${(2 ** size) - 1}`
+        document.querySelector("#minMoves").innerText = (2 ** size) - 1
         document.querySelector("#moves").innerText = "0"
 
 		event.target.innerText = "Reset Game"

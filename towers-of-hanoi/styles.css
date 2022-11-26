@@ -62,6 +62,10 @@
     justify-content: center;
 }
 
+.emptyZero:empty {
+    display: none;
+}
+
 .hBox {
     display: flex;
     flex-direction: row;
@@ -83,5 +87,17 @@
 }
 
 .mBottom {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.mTop {
+    margin-top: 15px;
+}
+
+#moves::before {
+    content: "Moves: "
+}
+
+#minMoves::before {
+    content: "Minimum number of moves: "
 }
