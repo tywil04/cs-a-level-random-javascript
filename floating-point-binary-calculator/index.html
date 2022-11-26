@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        
+        <title>Floating Point Binary Calculator</title>
+
+        <link rel="stylesheet" href="/floating-point-binary-calculator/styles.css"/>
+        <link rel="stylesheet" href="/shared.css"/>
+    </head>
+    <body>
+
+
+        <div class="hBox">
+            <div class="vBox">
+                <h1>Floating Point Binary Calculator</h1>
+
+                <div class="inputContainer">
+                    <label for="numberInput">Enter Number</label>
+                    <input id="numberInput" type="number"/>
+                    <div class="inputButtonContainer">
+                        <button type="button" class="subtle" onclick="clearInput()">Clear</button>
+                        <button type="button" onclick="convert()">Submit</button>
+                    </div>
+                </div>
+
+                <hr/>
+
+                <div id="output" class="outputContainer">
+                </div>
+            </div>
+        </div>
+
+        <script src="calculator.js"></script>
+    </body>
+</html>

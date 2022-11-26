@@ -1,0 +1,68 @@
+.disk {
+    background-color: lightblue;
+    border-radius: 6px;
+    padding: 5px 10px;
+    width: fit-content;
+    margin-bottom: 2px;
+	transform: translate(0, 0); /* Wierd hacky thing that renders the rounded corners while dragging */
+    pointer-events: none; /* disable click events from firing when the disk is not the top disk in a tower */
+    -webkit-user-select: none;  
+    -moz-user-select: none;    
+    -ms-user-select: none;      
+    user-select: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.disk:last-child {
+    margin-top: 2px;
+    cursor: pointer;
+    pointer-events: auto; /* reenable click events */
+}
+
+.disk:first-child {
+    margin-bottom: 0px;
+}
+
+.tower {
+    display: flex;
+    flex-direction: column-reverse;
+    background: linear-gradient(dodgerblue, dodgerblue) no-repeat center/7px 100%;
+    border-bottom: 7px solid dodgerblue;
+    width: 5%;
+}
+
+.tower.active {
+    background-color: rebeccapurple;
+}
+
+.tower:not(:last-child) {
+    margin-right: 10px;
+}
+
+.drop-target {
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}
+
+.inactive {
+    display: none;
+}
+
+.hidden {
+    opacity: 0%;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    height: 70%;
+    justify-content: center;
+}
+
+.hBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}

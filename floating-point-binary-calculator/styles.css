@@ -1,0 +1,130 @@
+.inputButtonContainer {
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    margin-left: auto;
+}
+
+.inputContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.inputContainer > * {
+    margin-bottom: 5px;
+}
+
+.inputContainer > button {
+    margin-left: auto
+}
+
+.inputContainer > label {
+    margin-left: 1px;
+    font-weight: bold;
+    color: white;
+}
+
+table {
+    width: fit-content;
+    height: fit-content;
+    border: none;
+    appearance: none;
+    border-collapse: collapse;
+}
+
+tr > th {
+    background-color: var(--blue);
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+tr > th:first-child {
+    border-top-left-radius: 6px;
+}
+
+tr > th:last-child {
+    border-top-right-radius: 6px;
+}
+
+tr > td {
+    text-align: center;
+    background-color: var(--secondary-colour);
+    color: white;
+}
+
+tr > td:nth-child(even) {
+    background-color: var(--tertiary-colour);
+}
+
+tr > td:first-child {
+    border-bottom-left-radius: 6px;
+}
+
+tr > td:last-child {
+    border-bottom-right-radius: 6px;
+}
+
+td, th {
+    padding: 4px 4px 4px 8px;
+}
+
+.inlineTables {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.inlineTables > * {
+    margin-right: 20px;
+}
+
+.tableHeader {
+    padding: 0 0 0 1px;
+    margin-top: 1px;
+    margin-bottom: 4px;
+    color: white;
+}
+
+h1 {
+    margin-bottom: 3px;
+    padding-bottom: 3px;
+    font-weight: bold;
+    font-size: x-large;
+    margin-top: 40px;
+    color: white;
+}
+
+h1:first-child {
+    margin-top: 0 !important;
+}
+
+hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 1px !important;
+    border: none;
+    background-color: var(--secondary-colour);
+}
+
+.vBox {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    height: fit-content;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    min-width: 40%;
+    max-width: 40%;
+    padding: 20px;
+    overflow: auto;
+}
+
+.hBox {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+}
